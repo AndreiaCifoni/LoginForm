@@ -1,4 +1,5 @@
 import React from "react";
+import "./form.css";
 // import { database } from "./database";
 
 const database = {
@@ -7,10 +8,17 @@ const database = {
   password: "mike123",
 };
 
-const Welcome = () => {
+const Welcome = ({ onLogout }) => {
+  const onClickHandler = () => {
+    onLogout();
+  };
+
   return (
-    <div>
+    <div className="welcome">
       <p>{`Welcome ${database.name}!!`}</p>
+      <button className="btn btn-success" onClick={onClickHandler}>
+        Logout
+      </button>
     </div>
   );
 };

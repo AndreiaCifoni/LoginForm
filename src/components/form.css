@@ -1,0 +1,56 @@
+.container {
+  width: 350px;
+  background-color: rgb(235, 193, 219);
+  padding: 20px 30px;
+  margin: auto;
+  border-radius: 5px;
+  color: rgb(145, 45, 107);
+}
+
+.text-field {
+  width: 80%;
+  margin: 8px 5px;
+  padding: 8px 20px;
+  border: 1px solid rgb(145, 45, 107);
+  border-radius: 4px;
+}
+
+.div-error {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  border: 2px solid rgb(145, 45, 107);
+  background-color: rgb(192, 11, 123);
+  border-radius: 5px;
+}
+
+.msg-error {
+  padding: 10px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: ;
+}
+
+.welcome {
+  width: 50%;
+  margin: 30px auto;
+  font-size: 22px;
+  color: rgb(23, 77, 61);
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  margin-top: 25px;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background-color: rgb(142, 80, 118);
+  border: 2px solid rgb(145, 45, 107);
+}
+
+.btn-success {
+  background-color: rgb(40, 135, 108);
+  border: 2px solid rgb(23, 77, 61);
+}

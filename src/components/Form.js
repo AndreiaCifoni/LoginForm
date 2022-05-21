@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./form.css";
 // import { database } from "./database";
 
 const database = {
@@ -26,11 +27,12 @@ const Form = ({ onSuccess, onFail }) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={onSubmitHandler}>
-        <div>
+        <div className="input">
           <label>Name</label>
           <input
+            className="text-field"
             type="text"
             value={validation.name}
             onChange={(event) => {
@@ -41,9 +43,10 @@ const Form = ({ onSuccess, onFail }) => {
             }}
           />
         </div>
-        <div>
+        <div className="input">
           <label>E-mail</label>
           <input
+            className="text-field"
             type="email"
             value={validation.email}
             onChange={(event) => {
@@ -54,9 +57,10 @@ const Form = ({ onSuccess, onFail }) => {
             }}
           />
         </div>
-        <div>
+        <div className="input">
           <label>Password</label>
           <input
+            className="text-field"
             type="password"
             value={validation.password}
             onChange={(event) => {
@@ -67,7 +71,7 @@ const Form = ({ onSuccess, onFail }) => {
             }}
           />
         </div>
-        <input type="submit" value="Subscribe!" />
+        <input className="btn btn-submit" type="submit" value="Subscribe!" />
       </form>
     </div>
   );
