@@ -22,8 +22,7 @@ const Form = ({ onSuccess, onFail }) => {
       validation.password === database.password
     ) {
       onSuccess();
-    }
-    onFail();
+    } else onFail();
   };
 
   return (
