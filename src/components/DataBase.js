@@ -1,7 +1,7 @@
-const DataBase = {
+const database = {
   name: "Andreia Cifoni",
   email: "admin@admin.com",
   password: "mike123",
 };
 
-export default DataBase;
+export { database };
